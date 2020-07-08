@@ -13,5 +13,11 @@ def on_board?(place)
   else return false
   end
 end
+if position_taken?(board,index) == false && on_board?(place)== true
+  return true
+else
+  return false
+end
+end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
