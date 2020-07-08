@@ -3,7 +3,7 @@ def valid_move?(board, index)
   def position_taken?(board, index)
     if board [index] == " " || board[index] == "" || board[index] == nil
       return false
-    else board[index] == "x" || board[index] == "O"
+    else 
       return true
     end
   end
@@ -13,7 +13,7 @@ def on_board?(place)
   else return false
   end
 end
-if position_taken?(board,index) == false && on_board?(place)== true
+if position_taken?(board,index) == false && on_board?(place) == true
   return true
 else
   return false
