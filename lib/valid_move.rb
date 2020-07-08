@@ -1,6 +1,6 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
-  if board[index] == " " && board[index] != "X" || board[index] != "O"
+  if board[index] == " " || board[index] != "X" || board[index] != "O"
     retrun true
   end
 end
