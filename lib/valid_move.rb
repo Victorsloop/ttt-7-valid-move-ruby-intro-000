@@ -14,7 +14,7 @@ def on_board?(place)
     return false
   end
 end
-if position_taken?(board,index) == false && on_board?(place) == true
+if position_taken?(array,indx) == false && on_board?(place) == true
   return true
 else
   return false
